@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59EC1E7920BBEAA0001D816D /* JATranslationPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59EC1E7820BBEAA0001D816D /* JATranslationPlayerView.swift */; };
 		5C482ACA1D130E4200650133 /* MYAudioTapProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C482AC91D130E4200650133 /* MYAudioTapProcessor.m */; };
 		5CF5AF6F1D11F39200957A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5AF6E1D11F39200957A71 /* AppDelegate.swift */; };
 		5CF5AF711D11F39200957A71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF5AF701D11F39200957A71 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59EC1E7820BBEAA0001D816D /* JATranslationPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JATranslationPlayerView.swift; sourceTree = "<group>"; };
 		5C482AC81D130E4200650133 /* MYAudioTapProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioTapProcessor.h; sourceTree = "<group>"; };
 		5C482AC91D130E4200650133 /* MYAudioTapProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioTapProcessor.m; sourceTree = "<group>"; };
 		5CF5AF6C1D11F39200957A71 /* Recognize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recognize.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +72,7 @@
 				5CF5AF811D120D2400957A71 /* Recognize-Bridging-Header.h */,
 				5C482AC81D130E4200650133 /* MYAudioTapProcessor.h */,
 				5C482AC91D130E4200650133 /* MYAudioTapProcessor.m */,
+				59EC1E7820BBEAA0001D816D /* JATranslationPlayerView.swift */,
 			);
 			path = Recognize;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			files = (
 				5CF5AF711D11F39200957A71 /* ViewController.swift in Sources */,
 				5C482ACA1D130E4200650133 /* MYAudioTapProcessor.m in Sources */,
+				59EC1E7920BBEAA0001D816D /* JATranslationPlayerView.swift in Sources */,
 				5CF5AF6F1D11F39200957A71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,7 +282,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Recognize/Recognize-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zats.Recognize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Recognize/Recognize-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

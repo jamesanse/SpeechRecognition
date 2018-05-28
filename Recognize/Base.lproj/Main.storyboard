@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="I9Q-qW-GfW">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,10 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoG-rV-ixf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uoG-rV-ixf">
+                                <rect key="frame" x="20" y="0.0" width="627" height="0.0"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,8 +32,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="uoG-rV-ixf" secondAttribute="trailing" id="PaG-Zc-zEO"/>
-                            <constraint firstAttribute="bottom" secondItem="uoG-rV-ixf" secondAttribute="bottom" id="tzW-Wm-meG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uoG-rV-ixf" secondAttribute="trailing" id="Gkh-zG-E4V"/>
+                            <constraint firstItem="uoG-rV-ixf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lto-v6-Z2C"/>
+                            <constraint firstItem="uoG-rV-ixf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="sdV-ar-b5d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -37,7 +43,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+            <point key="canvasLocation" x="-906" y="1"/>
+        </scene>
+        <!--Translation Player Controller-->
+        <scene sceneID="ERx-Yg-Nv9">
+            <objects>
+                <viewController id="diG-kN-RbK" customClass="JATranslationPlayerController" customModule="Recognize" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dvN-ag-D2X"/>
+                        <viewControllerLayoutGuide type="bottom" id="rAB-44-trh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fJh-d4-SKf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alV-Cu-9DO">
+                                <rect key="frame" x="288.5" y="148" width="89" height="78"/>
+                                <inset key="contentEdgeInsets" minX="30" minY="30" maxX="30" maxY="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playVideo" destination="diG-kN-RbK" eventType="touchUpInside" id="Nqf-8I-oif"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-f0-oBa">
+                                <rect key="frame" x="593" y="20" width="54" height="28"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="openMediaPicker" destination="diG-kN-RbK" eventType="touchUpInside" id="DNw-UR-vnJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="alV-Cu-9DO" firstAttribute="centerX" secondItem="fJh-d4-SKf" secondAttribute="centerX" id="4Wo-WY-6z7"/>
+                            <constraint firstItem="6hT-f0-oBa" firstAttribute="trailing" secondItem="fJh-d4-SKf" secondAttribute="trailingMargin" id="Pte-co-1DX"/>
+                            <constraint firstItem="alV-Cu-9DO" firstAttribute="centerY" secondItem="fJh-d4-SKf" secondAttribute="centerY" id="R3R-u8-F4v"/>
+                            <constraint firstItem="6hT-f0-oBa" firstAttribute="top" secondItem="dvN-ag-D2X" secondAttribute="bottom" constant="20" id="yCj-o4-ClN"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xbU-Wj-a2U" appends="YES" id="jDa-wk-yHM"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="36K-re-HGF"/>
+                    <connections>
+                        <outlet property="albumPickButton" destination="6hT-f0-oBa" id="y8c-gr-onN"/>
+                        <outlet property="playButton" destination="alV-Cu-9DO" id="eh1-r2-XTM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wkd-5M-l5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xbU-Wj-a2U">
+                    <connections>
+                        <action selector="playerViewTapped" destination="diG-kN-RbK" id="SPU-NP-t1H"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="967.4662668665668" y="26.399999999999999"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zlx-HN-PVg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="I9Q-qW-GfW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eo0-yb-hMJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="diG-kN-RbK" kind="relationship" relationship="rootViewController" id="ZiB-hN-hjy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCa-PG-saY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.76161919040482" y="26.399999999999999"/>
         </scene>
     </scenes>
 </document>
